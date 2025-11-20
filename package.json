@@ -1,12 +1,15 @@
 {
   "name": "mp-tech-site",
-  "private": false,
+  "private": true,
+   "homepage": "https://mohitpalhore-crypto.github.io/mp-tech-site/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
     "preview": "vite preview"
   },
   "dependencies": {
